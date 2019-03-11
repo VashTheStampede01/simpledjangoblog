@@ -1,0 +1,5 @@
+<h2>Article Index</h2>
+{% for article in object_list %}
+{{article.title}}
+<a href ="{% url "article_detail" article.id %}">selengkapnya</a>
+{% endfor %}
